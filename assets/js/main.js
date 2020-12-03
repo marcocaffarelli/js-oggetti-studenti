@@ -56,4 +56,11 @@ $(function (){
     }
     console.log(studenteNuovo);
 
+    // aggiunto lo studente nuovo alla lista dei studenti
+    studenti.push(studenteNuovo);
+
+    // ciclo for in per verificare se studenteNuovo è stato aggiunto alla lista studenti
+    for (key in studenti) {
+        console.log(key, studenti[key]);
+    };
 });
