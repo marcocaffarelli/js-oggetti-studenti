@@ -9,7 +9,7 @@ $(function (){
 
     //Stampare a schermo attraverso il for in tutte le proprietà.
     for (var key in studente) {
-        console.log(key, studente[key]);
+        //console.log(key, studente[key]);
         //stamapa in html tramite javascript
         document.getElementById('singolo').innerHTML += key + ": " + studente[key] + '<br>';
         };

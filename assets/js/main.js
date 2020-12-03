@@ -5,7 +5,7 @@ $(function (){
         cognome : "Caffarelli",
         eta : "26"
     };
-    console.log(studente);
+    //console.log(studente);
 
     //Stampare a schermo attraverso il for in tutte le proprietà.
     for (var key in studente) {
@@ -56,8 +56,12 @@ $(function (){
         nome : nomeUtente,
         cognome : cognomeUtente,
         eta : etaUtente
-    }
-    console.log(studenteNuovo);
+    };
+    //console.log(studenteNuovo);
+    //Stampare a schermo attraverso il for in anche lo studente inserito dall'utente.
+    for (var key in studenteNuovo) {
+        console.log(key, studenteNuovo[key]);
+    };
 
     // aggiunto lo studente nuovo alla lista dei studenti
     studenti.push(studenteNuovo);
