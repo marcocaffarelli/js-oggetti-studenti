@@ -1,5 +1,3 @@
-// Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-
 $(function (){
     //Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età.
     var studente = {
@@ -18,23 +16,28 @@ $(function (){
     var studenti = [
         {
             nome : "Francesco",
-            cognome : "Totti"
+            cognome : "Totti",
+            eta : 44
         },
         {
             nome : "Daniele",
-            cognome : "De Rossi"
+            cognome : "De Rossi",
+            eta : 37
         },
         {
             nome : "Alessandro",
-            cognome : "Florenzi"
+            cognome : "Florenzi",
+            eta : 29
         },
         {
             nome : "Edin",
-            cognome : "Dzeko"
+            cognome : "Dzeko",
+            eta : 34
         },
         {
             nome : "Lorenzo",
-            cognome : "Pellegrini"
+            cognome : "Pellegrini",
+            eta : 24
         }
     ]
 
@@ -46,7 +49,7 @@ $(function (){
     // lista dei dati che inserisce l'utente tramite prompt
     var nomeUtente = prompt("Inserisci il tuo nome");
     var cognomeUtente = prompt("Inserisci il tuo cognome");
-    var etaUtente = prompt("Inserisci la tua età");
+    var etaUtente = Number(prompt("Inserisci la tua età"));
 
     // oggetto studente nuovo che racchiude i prompt inseriti dall'utente 
     var studenteNuovo = {
