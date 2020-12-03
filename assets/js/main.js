@@ -43,4 +43,17 @@ $(function (){
         console.log(key, studenti[key]);
     };
 
+    // lista dei dati che inserisce l'utente tramite prompt
+    var nomeUtente = prompt("Inserisci il tuo nome");
+    var cognomeUtente = prompt("Inserisci il tuo cognome");
+    var etaUtente = prompt("Inserisci la tua età");
+
+    // oggetto studente nuovo che racchiude i prompt inseriti dall'utente 
+    var studenteNuovo = {
+        nome : nomeUtente,
+        cognome : cognomeUtente,
+        eta : etaUtente
+    }
+    console.log(studenteNuovo);
+
 });
