@@ -1,4 +1,3 @@
-// Stampare a schermo attraverso il for in tutte le proprietà.
 // Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
@@ -7,7 +6,13 @@ $(function (){
     var studente = {
         nome : "Marco",
         cognome : "Caffarelli",
-        età : "26"
+        eta : "26"
     };
     console.log(studente);
+
+    //Stampare a schermo attraverso il for in tutte le proprietà.
+    for (var key in studente) {
+        console.log(key, studente[key]);
+    }
+
 });
