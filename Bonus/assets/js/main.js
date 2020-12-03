@@ -1,46 +1,72 @@
 $(function (){
     //Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età.
-    var studente = {
-        Nome : "Marco",
-        Cognome : "Caffarelli",
-        Età : "26"
+    var capitano = {
+        Nome : "Edin",
+        Cognome : "Dzeko",
+        Numero : "9"
     };
     //console.log(studente);
 
     //Stampare a schermo attraverso il for in tutte le proprietà.
-    for (var key in studente) {
+    for (var key in capitano) {
         //console.log(key, studente[key]);
         //stamapa in html tramite javascript
-        document.getElementById('singolo').innerHTML += key + ": " + studente[key] + '<br>';
+        document.getElementById('singolo').innerHTML += key + ": " + capitano[key] + '<br>';
         };
 
     //Creare un array di oggetti di studenti.
-    var studenti = [
+    var formazione = [
         {
-            Nome : "Francesco",
-            Cognome : "Totti",
-            Età : 44
+            Nome : "Antonio",
+            Cognome : "Mirante",
+            Numero : 83
         },
         {
-            Nome : "Daniele",
-            Cognome : "De Rossi",
-            Età : 37
+            Nome : "Chris",
+            Cognome : "Smalling",
+            Numero : 6
         },
         {
-            Nome : "Alessandro",
-            Cognome : "Florenzi",
-            Età : 29
+            Nome : "Roger",
+            Cognome : "Ibanez",
+            Numero : 3
         },
         {
-            Nome : "Edin",
-            Cognome : "Dzeko",
-            Età : 34
+            Nome : "Gianluca",
+            Cognome : "Mancini",
+            Numero : 23
+        },
+        {
+            Nome : "Jordan",
+            Cognome : "Veretout",
+            Numero : 17
         },
         {
             Nome : "Lorenzo",
             Cognome : "Pellegrini",
-            Età : 24
+            Numero : 7
+        },
+        {
+            Nome : "Leonardo",
+            Cognome : "Spinazzola",
+            Numero : 37
+        },
+        {
+            Nome : "Rick",
+            Cognome : "Karsdorp",
+            Numero : 2
+        },
+        {
+            Nome : "Pedro",
+            Cognome : "Rodriguez",
+            Numero : 11
+        },
+        {
+            Nome : "Henrikh",
+            Cognome : "Mkhitaryan",
+            Numero : 77
         }
+        
     ]
 
     // Ciclare su tutti gli studenti e stampare per ognuno nome e cognome.
@@ -49,9 +75,9 @@ $(function (){
     //};
 
     // ciclo for per stamapre gli oggetti dell'array nell'html
-    for (var i = 0; i < studenti.length; i++) {
+    for (var i = 0; i < formazione.length; i++) {
         //console.log(studenti[i]); 
-        document.getElementById('lista').innerHTML += '<li>' + 'Nome: ' + studenti[i].Nome + '<br>' + 'Cognome: ' + studenti[i].Cognome + '<br>' + 'Età: ' + studenti[i].Età + '<br>' + '</li>'; 
+        document.getElementById('lista').innerHTML += '<li>' + 'Nome: ' + formazione[i].Nome + '<br>' + 'Cognome: ' + formazione[i].Cognome + '<br>' + 'Numero: ' + formazione[i].Numero + '<br>' + '</li>'; 
     };
 
 
@@ -62,14 +88,14 @@ $(function (){
     var etaUtente = Number(prompt("Inserisci la tua età"));
 
     // oggetto studente nuovo che racchiude i prompt inseriti dall'utente 
-    var studenteNuovo = {
+    var Allenatore = {
         Nome : nomeUtente,
         Cognome : cognomeUtente,
         Età : etaUtente
     }
     //console.log(studenteNuovo);
-    for (var key in studenteNuovo) {
-        document.getElementById('utente').innerHTML += key + ": " + studenteNuovo[key] + '<br>';
+    for (var key in Allenatore) {
+        document.getElementById('utente').innerHTML += key + ": " + Allenatore[key] + '<br>';
     };
 
 });

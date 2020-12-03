@@ -8,25 +8,38 @@
             *{
                 box-sizing: border-box;
                 padding: 0;
-                margin: 0
-             }
+                margin: 0;
+            }
+            div{
+                 text-align: center;
+                 border: 3px solid black;
+                 border-radius: 15px;
+                 width: 200px;
+                 margin: auto;
+            }
             #lista{
                 list-style: none;
             }
             li, p{
                 padding: 10px 0;
+                font-weight: bold;
+            }
+            h2, li, #singolo{
+                border-bottom: 2px solid black;
             }
         </style>
     </head>
     <body>
-        <h2>Studente</h2>
-        <p id = "singolo"></p>
-        <h2>Studenti</h2>
-        <ul id = "lista"> 
-        </ul>
-        <h2>Studente Nuovo</h2>
-        <p id = "utente"></p>
-
+        <div>
+            <h2>Capitano</h2>
+            <p id = "singolo"></p>
+            <h2>Formazione</h2>
+            <ul id = "lista"> 
+            </ul>
+            <h2>Allenatore</h2>
+            <p id = "utente"></p>
+        </div>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
