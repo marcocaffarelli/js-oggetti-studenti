@@ -49,9 +49,11 @@ $(function (){
         
     };
     for (var i = 0; i < studenti.length; i++) {
-        console.log(studenti[i]);
-        document.getElementById('lista').innerHTML += studenti[i]; 
+        //console.log(studenti[i]); 
+        document.getElementById('lista').innerHTML += '<li>' + 'Nome: ' + studenti[i].Nome + '<br>' + 'Cognome: ' + studenti[i].Cognome + '<br>' + 'Età: ' + studenti[i].Eta + '<br>' + '</li>'; 
     }
+
+
 
     // lista dei dati che inserisce l'utente tramite prompt
     /*var nomeUtente = prompt("Inserisci il tuo nome");
